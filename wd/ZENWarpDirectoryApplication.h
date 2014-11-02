@@ -10,6 +10,6 @@
 
 @interface ZENWarpDirectoryApplication : NSObject
 
-+ (void)processArguments:(NSArray *)arguments;
+- (void)processArguments:(NSArray *)arguments;
 
 @end

@@ -10,4 +10,9 @@
 
 @implementation ZENWarpDirectory
 
+- (void)add:(NSString *)string
+{
+    NSLog(@"foo");
+}
+
 @end
