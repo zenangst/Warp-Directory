@@ -11,6 +11,7 @@
 		BD66D5AC1A06466B00208BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5AB1A06466B00208BFE /* main.m */; };
 		BD66D5B41A06471900208BFE /* ZENWarpDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5B31A06471900208BFE /* ZENWarpDirectory.m */; };
 		BD66D5B71A06491100208BFE /* ZENWarpDirectoryApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5B61A06491100208BFE /* ZENWarpDirectoryApplication.m */; };
+		BDBA87EB1A0677CC00D23137 /* wd_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBA87EA1A0677CC00D23137 /* wd_tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,10 +35,20 @@
 		BD66D5B31A06471900208BFE /* ZENWarpDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENWarpDirectory.m; sourceTree = "<group>"; };
 		BD66D5B51A06491100208BFE /* ZENWarpDirectoryApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENWarpDirectoryApplication.h; sourceTree = "<group>"; };
 		BD66D5B61A06491100208BFE /* ZENWarpDirectoryApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENWarpDirectoryApplication.m; sourceTree = "<group>"; };
+		BDBA87E61A0677CC00D23137 /* wd-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wd-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBA87E91A0677CC00D23137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDBA87EA1A0677CC00D23137 /* wd_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wd_tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BD66D5A51A06466B00208BFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBA87E31A0677CC00D23137 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				BD66D5AA1A06466B00208BFE /* wd */,
+				BDBA87E71A0677CC00D23137 /* wd-tests */,
 				BD66D5A91A06466B00208BFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				BD66D5A81A06466B00208BFE /* wd */,
+				BDBA87E61A0677CC00D23137 /* wd-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +88,23 @@
 				BD17F3F71A0651B000F4DFEB /* ZENConfiguration.m */,
 			);
 			path = wd;
+			sourceTree = "<group>";
+		};
+		BDBA87E71A0677CC00D23137 /* wd-tests */ = {
+			isa = PBXGroup;
+			children = (
+				BDBA87EA1A0677CC00D23137 /* wd_tests.m */,
+				BDBA87E81A0677CC00D23137 /* Supporting Files */,
+			);
+			path = "wd-tests";
+			sourceTree = "<group>";
+		};
+		BDBA87E81A0677CC00D23137 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDBA87E91A0677CC00D23137 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +127,23 @@
 			productReference = BD66D5A81A06466B00208BFE /* wd */;
 			productType = "com.apple.product-type.tool";
 		};
+		BDBA87E51A0677CC00D23137 /* wd-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDBA87EE1A0677CC00D23137 /* Build configuration list for PBXNativeTarget "wd-tests" */;
+			buildPhases = (
+				BDBA87E21A0677CC00D23137 /* Sources */,
+				BDBA87E31A0677CC00D23137 /* Frameworks */,
+				BDBA87E41A0677CC00D23137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wd-tests";
+			productName = "wd-tests";
+			productReference = BDBA87E61A0677CC00D23137 /* wd-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +154,9 @@
 				ORGANIZATIONNAME = zenangst;
 				TargetAttributes = {
 					BD66D5A71A06466B00208BFE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BDBA87E51A0677CC00D23137 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -124,9 +174,20 @@
 			projectRoot = "";
 			targets = (
 				BD66D5A71A06466B00208BFE /* wd */,
+				BDBA87E51A0677CC00D23137 /* wd-tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDBA87E41A0677CC00D23137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD66D5A41A06466B00208BFE /* Sources */ = {
@@ -137,6 +198,14 @@
 				BD66D5AC1A06466B00208BFE /* main.m in Sources */,
 				BD17F3F81A0651B000F4DFEB /* ZENConfiguration.m in Sources */,
 				BD66D5B41A06471900208BFE /* ZENWarpDirectory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBA87E21A0677CC00D23137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBA87EB1A0677CC00D23137 /* wd_tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +300,38 @@
 			};
 			name = Release;
 		};
+		BDBA87EC1A0677CC00D23137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "wd-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDBA87ED1A0677CC00D23137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "wd-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -251,6 +352,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BDBA87EE1A0677CC00D23137 /* Build configuration list for PBXNativeTarget "wd-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDBA87EC1A0677CC00D23137 /* Debug */,
+				BDBA87ED1A0677CC00D23137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
