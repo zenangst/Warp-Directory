@@ -11,10 +11,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSArray *arguments = [[NSProcessInfo processInfo] arguments];
         ZENWarpDirectoryApplication *application;
         application = [ZENWarpDirectoryApplication new];
-        [application processArguments:arguments];
     }
     return 0;
 }

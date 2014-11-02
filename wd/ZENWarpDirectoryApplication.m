@@ -8,18 +8,21 @@
 
 #import "ZENWarpDirectoryApplication.h"
 #import "ZENWarpDirectory.h"
+#import "ZENConfiguration.h"
 
 @interface ZENWarpDirectoryApplication ()
 @property (nonatomic, retain) ZENWarpDirectory *warpDirectory;
+@property (nonatomic, retain) ZENConfiguration *configuration;
 @end
 
 @implementation ZENWarpDirectoryApplication
 
-- (instancetype)initWithArguments:(NSArray *)arguments
+- (instancetype)init
 {
     self = [super init];
     if (!self) return nil;
 
+    NSArray *arguments = [[NSProcessInfo processInfo] arguments];
     [self processArguments:arguments];
 
     return self;
@@ -50,9 +53,24 @@
 
 - (ZENWarpDirectory *)warpDirectory
 {
-    _warpDirectory = (_warpDirectory) ?: [ZENWarpDirectory new];
+    if (_warpDirectory) return _warpDirectory;
+
+    _warpDirectory = [ZENWarpDirectory new];
+    _warpDirectory.delegate = self.configuration;
 
     return _warpDirectory;
+}
+
+- (ZENConfiguration *)configuration
+{
+    _configuration = (_configuration) ?: [ZENConfiguration new];
+
+    NSDictionary *environmentals = [[NSProcessInfo processInfo] environment];
+    NSString *path = [NSString stringWithFormat:@"%@/.warprc", environmentals[@"HOME"]];
+
+    _configuration.path = path;
+
+    return _configuration;
 }
 
 @end
