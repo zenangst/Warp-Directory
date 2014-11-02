@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD17F3F81A0651B000F4DFEB /* ZENConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BD17F3F71A0651B000F4DFEB /* ZENConfiguration.m */; };
 		BD66D5AC1A06466B00208BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5AB1A06466B00208BFE /* main.m */; };
 		BD66D5B41A06471900208BFE /* ZENWarpDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5B31A06471900208BFE /* ZENWarpDirectory.m */; };
 		BD66D5B71A06491100208BFE /* ZENWarpDirectoryApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5B61A06491100208BFE /* ZENWarpDirectoryApplication.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD17F3F61A0651B000F4DFEB /* ZENConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENConfiguration.h; sourceTree = "<group>"; };
+		BD17F3F71A0651B000F4DFEB /* ZENConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENConfiguration.m; sourceTree = "<group>"; };
 		BD66D5A81A06466B00208BFE /* wd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = wd; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD66D5AB1A06466B00208BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD66D5B21A06471900208BFE /* ZENWarpDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENWarpDirectory.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				BD66D5B61A06491100208BFE /* ZENWarpDirectoryApplication.m */,
 				BD66D5B21A06471900208BFE /* ZENWarpDirectory.h */,
 				BD66D5B31A06471900208BFE /* ZENWarpDirectory.m */,
+				BD17F3F61A0651B000F4DFEB /* ZENConfiguration.h */,
+				BD17F3F71A0651B000F4DFEB /* ZENConfiguration.m */,
 			);
 			path = wd;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			files = (
 				BD66D5B71A06491100208BFE /* ZENWarpDirectoryApplication.m in Sources */,
 				BD66D5AC1A06466B00208BFE /* main.m in Sources */,
+				BD17F3F81A0651B000F4DFEB /* ZENConfiguration.m in Sources */,
 				BD66D5B41A06471900208BFE /* ZENWarpDirectory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +250,7 @@
 				BD66D5B11A06466B00208BFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
