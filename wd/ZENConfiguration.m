@@ -66,18 +66,40 @@
 
 - (void)save
 {
+    NSMutableString *configurationString = [NSMutableString new];
+    NSArray *keys = [self.directories allKeys];
+    NSString *entry;
+    NSString *path;
+
+    for (NSString *key in keys) {
+        path = self.directories[key];
+        if (!path) continue;
+
+        entry = [NSString stringWithFormat:@"%@:%@\n", key, path];
+        [configurationString appendString:entry];
+    }
+
+    NSError *error = nil;
+    [configurationString writeToFile:self.path
+                          atomically:YES
+                            encoding:NSUTF8StringEncoding
+                               error:&error];
+
+    if (error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }
 
 }
 
 - (void)didAddPath:(NSString *)path withName:(NSString *)name
 {
-    NSLog(@"%s", __FUNCTION__);
+    [self.directories setObject:path forKey:name];
     [self save];
 }
 
 - (void)didRemovePath:(NSString *)path withName:(NSString *)name
 {
-    NSLog(@"%s", __FUNCTION__);
+    [self save];
 }
 
 @end
