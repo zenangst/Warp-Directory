@@ -36,6 +36,7 @@
         implementation = [self.warpDirectory methodForSelector:simpleSelector];
         void (*func)(id, SEL) = (void *)implementation;
         func(self.warpDirectory, simpleSelector);
+        return;
     }
 
     NSString *alternateSelector = [NSString stringWithFormat:@"%@:", arguments[1]];
@@ -50,6 +51,7 @@
 - (ZENWarpDirectory *)warpDirectory
 {
     _warpDirectory = (_warpDirectory) ?: [ZENWarpDirectory new];
+
     return _warpDirectory;
 }
 
