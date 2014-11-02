@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD66D5AC1A06466B00208BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5AB1A06466B00208BFE /* main.m */; };
+		BD66D5B41A06471900208BFE /* WarpDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66D5B31A06471900208BFE /* WarpDirectory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		BD66D5A81A06466B00208BFE /* wd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = wd; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD66D5AB1A06466B00208BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD66D5B21A06471900208BFE /* WarpDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarpDirectory.h; sourceTree = "<group>"; };
+		BD66D5B31A06471900208BFE /* WarpDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarpDirectory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				BD66D5AB1A06466B00208BFE /* main.m */,
+				BD66D5B21A06471900208BFE /* WarpDirectory.h */,
+				BD66D5B31A06471900208BFE /* WarpDirectory.m */,
 			);
 			path = wd;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD66D5AC1A06466B00208BFE /* main.m in Sources */,
+				BD66D5B41A06471900208BFE /* WarpDirectory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
