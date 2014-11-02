@@ -99,6 +99,7 @@
 
 - (void)didRemovePath:(NSString *)path withName:(NSString *)name
 {
+    [self.directories removeObjectForKey:name];
     [self save];
 }
 
