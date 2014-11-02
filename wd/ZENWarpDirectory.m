@@ -31,12 +31,20 @@
 
 - (void)add:(NSString *)string
 {
+    NSLog(@"%@:%@", string, self.workingDirectory);
 
+    if ([self.delegate respondsToSelector:@selector(didAddPath:withName:)]) {
+        [self.delegate didAddPath:string withName:self.workingDirectory];
+    }
 }
 
 - (void)remove:(NSString *)string
 {
+    NSLog(@"%@:%@", string, self.workingDirectory);
 
+    if ([self.delegate respondsToSelector:@selector(didRemovePath:withName:)]) {
+        [self.delegate didRemovePath:string withName:self.workingDirectory];
+    }
 }
 
 - (void)list
