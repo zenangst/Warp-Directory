@@ -13,5 +13,8 @@
 - (void)add:(NSString *)string;
 - (void)remove:(NSString *)string;
 - (void)list;
+- (void)clean;
+- (void)version;
+- (void)config;
 
 @end
