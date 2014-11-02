@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZENArgumentsHandler : NSObject
+@interface ZENWarpDirectoryApplication : NSObject
+
++ (void)processArguments:(NSArray *)arguments;
 
 @end

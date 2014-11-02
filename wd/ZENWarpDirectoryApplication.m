@@ -6,8 +6,13 @@
 //  Copyright (c) 2014 zenangst. All rights reserved.
 //
 
-#import "ZENArgumentsHandler.h"
+#import "ZENWarpDirectoryApplication.h"
 
-@implementation ZENArgumentsHandler
+@implementation ZENWarpDirectoryApplication
+
++ (void)processArguments:(NSArray *)arguments
+{
+    NSLog(@"");
+}
 
 @end

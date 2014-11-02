@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZENWarpDirectoryApplication.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSArray *arguments = [[NSProcessInfo processInfo] arguments];
-        
+        [ZENWarpDirectoryApplication processArguments:arguments];
     }
     return 0;
 }
