@@ -8,11 +8,55 @@
 
 #import "ZENWarpDirectory.h"
 
+@interface ZENWarpDirectory ()
+
+@property (nonatomic, strong) NSString *workingDirectory;
+@property (nonatomic, strong) NSString *homeDirectory;
+
+@end
+
 @implementation ZENWarpDirectory
+
+- (instancetype)init
+{
+    self = [super init];
+    if (!self) return nil;
+
+    NSDictionary *environmentals = [[NSProcessInfo processInfo] environment];
+    self.workingDirectory = (environmentals[@"PWD"])  ?: nil;
+    self.homeDirectory    = (environmentals[@"HOME"]) ?: nil;
+
+    return self;
+}
 
 - (void)add:(NSString *)string
 {
-    NSLog(@"foo");
+
+}
+
+- (void)remove:(NSString *)string
+{
+
+}
+
+- (void)list
+{
+
+}
+
+- (void)clean
+{
+
+}
+
+- (void)version
+{
+
+}
+
+- (void)config
+{
+
 }
 
 @end
