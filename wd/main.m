@@ -10,6 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        NSArray *arguments = [[NSProcessInfo processInfo] arguments];
         
     }
     return 0;

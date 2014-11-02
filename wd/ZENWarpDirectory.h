@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WarpDirectory : NSObject
+@interface ZENWarpDirectory : NSObject
 
 - (void)add:(NSString *)string;
 - (void)remove:(NSString *)string;

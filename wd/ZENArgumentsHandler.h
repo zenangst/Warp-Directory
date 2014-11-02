@@ -1,13 +1,13 @@
 //
-//  WarpDirectory.m
+//  ZENArgumentsHandler.h
 //  wd
 //
 //  Created by Christoffer Winterkvist on 11/2/14.
 //  Copyright (c) 2014 zenangst. All rights reserved.
 //
 
-#import "WarpDirectory.h"
+#import <Foundation/Foundation.h>
 
-@implementation WarpDirectory
+@interface ZENArgumentsHandler : NSObject
 
 @end
